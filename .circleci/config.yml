@@ -47,7 +47,8 @@ jobs:
       - run:
           name: run tests
           command: |
-            . venv/bin/activate
+            . env/bin/activate
+            cd djangotext
             python manage.py test
 
       - store_artifacts:
